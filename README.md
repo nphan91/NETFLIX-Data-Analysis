@@ -20,9 +20,9 @@ SELECT
 FROM [dbo].[netflix_titles]
 GROUP BY [type];
 
-### Objective: The aim of this analysis is to examine the distribution of content types (Movies vs TV Shows) in the Netflix catalog. 
+## Objective: The aim of this analysis is to examine the distribution of content types (Movies vs TV Shows) in the Netflix catalog. 
 -- By counting the number of occurrences of each content type, we can better understand the proportion of Movies and TV Shows available.
-### Results:
+## Results:
 --Movies: There are 6,131 Movies in the Netflix catalog.
 --TV Shows: There are 2,676 TV Shows in the Netflix catalog.
 --Implications:
