@@ -8,3 +8,5 @@ This project focuses on performing an in-depth analysis of Netflix's movies and 
 - Determine the most frequent ratings for both movies and TV shows.  
 - Analyze content trends based on release years, countries, and durations.  
 - Investigate and classify content using specific criteria and keyword-based groupings.  
+# Dataset
+Link: 
