@@ -23,11 +23,11 @@ GROUP BY [type];
 ## Objective: The aim of this analysis is to examine the distribution of content types (Movies vs TV Shows) in the Netflix catalog.  
 By counting the number of occurrences of each content type, we can better understand the proportion of Movies and TV Shows available.
 ## Results:
-# Movies: There are 6,131 Movies in the Netflix catalog.
-# TV Shows: There are 2,676 TV Shows in the Netflix catalog.
-# Implications:
-# The data shows that Movies make up the larger portion of the content available on Netflix, with Movies outnumbering TV Shows by a significant margin (approximately 2.3 times more Movies than TV Shows).
-# This distribution could indicate a greater focus on standalone films compared to episodic TV content
+Movies: There are 6,131 Movies in the Netflix catalog.
+TV Shows: There are 2,676 TV Shows in the Netflix catalog.
+Implications:
+The data shows that Movies make up the larger portion of the content available on Netflix, with Movies outnumbering TV Shows by a significant margin (approximately 2.3 times more Movies than TV Shows).
+This distribution could indicate a greater focus on standalone films compared to episodic TV content
 
 ### 2. Find the Most Common Rating for Movies and TV Shows
 ```sql
