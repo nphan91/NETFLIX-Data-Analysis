@@ -9,4 +9,4 @@ This project focuses on performing an in-depth analysis of Netflix's movies and 
 - Analyze content trends based on release years, countries, and durations.  
 - Investigate and classify content using specific criteria and keyword-based groupings.  
 # Dataset
-Link: 
+Link: https://github.com/nphan91/NETFLIX-Data-Analysis/blob/main/netflix_titles.csv
