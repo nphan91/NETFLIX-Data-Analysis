@@ -29,7 +29,6 @@ By counting the number of occurrences of each content type, we can better unders
 -	The data shows that Movies make up the larger portion of the content available on Netflix, with Movies outnumbering TV Shows by a significant margin (approximately 2.3 times more Movies than TV Shows).
 -	This distribution could indicate a greater focus on standalone films compared to episodic TV content
 
-
 ### 2. Find the Most Common Rating for Movies and TV Shows
 ```sql
 WITH RankedRatings AS (
@@ -48,8 +47,8 @@ WHERE rank = 1;
 ```
 ## Objective: The goal of this analysis is to identify which rating appears most frequently for each content type (e.g., Movies and TV Shows) in the netflix_titles dataset. 
 ## Result: 
-•	The analysis revealed that the most frequently occurring rating for both Movies and TV Shows in the dataset is TV-MA.
-•	This finding suggests that content labeled as TV-MA (intended for mature audiences) is highly prevalent across both content types.
+-	The analysis revealed that the most frequently occurring rating for both Movies and TV Shows in the dataset is TV-MA.
+-	This finding suggests that content labeled as TV-MA (intended for mature audiences) is highly prevalent across both content types.
 
 ### 3. List All Movies Released in a Specific Year (e.g., 2020)
 ```sql
@@ -80,11 +79,11 @@ ORDER BY
 ## Objective: The goal is to identify the top 5 countries with the highest number of content items (movies, TV shows, etc.) available on Netflix. 
 This analysis provides insight into the distribution of Netflix's content across various regions, helping to understand which countries dominate the platform in terms of content availability.
 ## Result: The following table presents the top 5 countries with the most content available on Netflix:
-•	United States		3,690
-•	India			1,046
-•	United Kingdom	806
-•	Canada		445
-•	France			393
+-	United States		3,690
+-	India			1,046
+-	United Kingdom	806
+-	Canada		445
+-	France			393
 
 
 ### 5. Identify the Longest Movie
@@ -96,9 +95,9 @@ AND ISNUMERIC(REPLACE([duration], ' min', '')) = 1  -- Ensure only valid duratio
 ORDER BY CAST(REPLACE([duration], ' min', '') AS INT) DESC;
 ```
 ## Objective:
-•	The purpose of this query is to determine the movie with the longest duration on Netflix. 
-•	By analyzing the dataset, we aim to identify which title has the highest runtime, ensuring that only valid numeric durations are considered.
-•	The analysis reveals that the movie with the longest duration is Black Mirror: Bandersnatch, with a runtime of 312 minutes.
+-	The purpose of this query is to determine the movie with the longest duration on Netflix. 
+-	By analyzing the dataset, we aim to identify which title has the highest runtime, ensuring that only valid numeric durations are considered.
+-	The analysis reveals that the movie with the longest duration is Black Mirror: Bandersnatch, with a runtime of 312 minutes.
 
 ### 6. Find Content Added in the Last 5 Years
 ```sql
@@ -109,8 +108,8 @@ WHERE CAST ([date_added] as DATE) >= DATEADD(YEAR, -5, GETDATE());---DATEADD(int
 ## Objective
 To identify all content added to Netflix in the past five years, providing insights into the volume and trends of newly added content over this period.
 ## Result:
-•	Total Rows Retrieved: 3,260
-•	This indicates that Netflix added 3,260 pieces of content in the last 5 years.
+-	Total Rows Retrieved: 3,260
+-	This indicates that Netflix added 3,260 pieces of content in the last 5 years.
 
 ### 7a. Find All Movies/TV Shows by Director 'Rajiv Chilaka'
 ```sql
@@ -147,7 +146,8 @@ GROUP BY TRIM(value)
 ORDER BY total_content DESC;
 ```
 ## Objective:
-•	To count the number of content items in each genre on Netflix 
-•	and sort the genres by the number of content items in descending order. 
-•	This query provides insight into which genres have the most content available on the platform.
+-	To count the number of content items in each genre on Netflix 
+-	and sort the genres by the number of content items in descending order. 
+-	This query provides insight into which genres have the most content available on the platform.
+
 
