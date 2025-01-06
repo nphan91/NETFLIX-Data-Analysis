@@ -13,15 +13,16 @@ Link: https://github.com/nphan91/NETFLIX-Data-Analysis/blob/main/netflix_titles.
 
 # Performance Analysis of Movies and TV Shows on Netflix 
 ### 1. Count the Number of Movies vs TV Shows
-'''sql
+```sql
 SELECT 
     [type],
     COUNT(*)
 FROM [dbo].[netflix_titles]
 GROUP BY [type];
--- Objective: The aim of this analysis is to examine the distribution of content types (Movies vs TV Shows) in the Netflix catalog. 
+
+### Objective: The aim of this analysis is to examine the distribution of content types (Movies vs TV Shows) in the Netflix catalog. 
 -- By counting the number of occurrences of each content type, we can better understand the proportion of Movies and TV Shows available.
--- Results:
+### Results:
 --Movies: There are 6,131 Movies in the Netflix catalog.
 --TV Shows: There are 2,676 TV Shows in the Netflix catalog.
 --Implications:
