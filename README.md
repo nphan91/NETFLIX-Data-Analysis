@@ -10,3 +10,5 @@ This project focuses on performing an in-depth analysis of Netflix's movies and 
 - Investigate and classify content using specific criteria and keyword-based groupings.  
 # Dataset
 Link: https://github.com/nphan91/NETFLIX-Data-Analysis/blob/main/netflix_titles.csv
+
+# Performance Analysis of Movies and TV Shows on Netflix 
